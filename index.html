@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bebu &amp; Bebudi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgm" src="song.mp3" loop preload="auto"></audio>
+<button id="musicToggle" class="music-toggle" aria-label="Play our song">
+  <span class="music-dot"></span> our song
+</button>
+
+<!-- SCENE 1: HERO -->
+<section id="scene-hero" class="scene active">
+  <div class="stitch-frame">
+    <p class="eyebrow">a little something for</p>
+    <h1 class="names"><span>Bebu</span> <span class="amp">&amp;</span> <span>Bebudi</span></h1>
+    <p class="subheading">Happy Girlfriend's Day</p>
+    <button id="openBtn" class="open-btn">open it&nbsp;&nbsp;❤</button>
+  </div>
+  <div class="grain"></div>
+</section>
+
+<!-- SCENE 2: COUNTDOWN -->
+<section id="scene-countdown" class="scene">
+  <p class="countdown-label">unwrapping in...</p>
+  <div id="countdownNum" class="countdown-num">5</div>
+</section>
+
+<!-- SCENE 3: LETTER -->
+<section id="scene-letter" class="scene">
+  <div class="letter-wrap">
+    <div class="polaroid">
+      <img src="us.jpg" alt="Us, holding hands">
+      <span class="tape tape-left"></span>
+      <span class="tape tape-right"></span>
+    </div>
+    <div class="letter-card">
+      <h2 class="letter-title">Happy Girlfriend's Day, my lovely lady!! <span class="heart">❤️</span></h2>
+      <p class="letter-body">
+        Even in my wishes, I never imagined having such a wholesome partner like you.
+        You are the spark of my life &amp; make every day full of beautiful memories.
+        I wish I could always make you happy &amp; treat you to the very best of my abilities.
+        Thank you for choosing me as your boyfriend and for being exactly who you are.
+        I love you so much ❤️❤️.
+      </p>
+      <p class="letter-sign">Always yours,<br><span class="sign-name">Champu</span></p>
+      <button id="toCouponBtn" class="next-link">one more thing &gt;&gt;</button>
+    </div>
+  </div>
+</section>
+
+<!-- SCENE 4: COUPON -->
+<section id="scene-coupon" class="scene">
+  <div class="coupon">
+    <p class="coupon-eyebrow">coupon for</p>
+    <h2 class="coupon-title">FREE <span>Hug &amp; Kisses</span></h2>
+    <div class="coupon-divider">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p class="coupon-sub">redeemable anytime, by Champu, no expiry</p>
+    <div class="coupon-icons">🤗 💋</div>
+  </div>
+  <button id="restartBtn" class="restart-btn">&lt; restart &gt;</button>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
